@@ -1,0 +1,16 @@
+m1=[[11,2,4],
+    [4,5,6],
+    [10,8,-12],
+    ]
+diag1=0
+diag2=0
+for i in range(len(m1)):
+    for j in range(len(m1[0])):
+        if i==j:
+            diag1+=m1[i][j]
+        if (i+j)==(len(m1)-1):
+            diag2+=m1[i][j]
+print(f"{diag1} {diag2}")
+diff=diag1-diag2
+print(abs(diff))
+        
