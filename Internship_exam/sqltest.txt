@@ -1,0 +1,4 @@
+select total=sum(total_amount)
+where order_date==(dd/01/2024)
+from Orders
+group by order_id;
