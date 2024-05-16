@@ -1,0 +1,85 @@
+
+<!--1. Construct a valid HTML document for your personal Profile registration page for a Job
+Site www.123Jobs.com. Add relevant HTML elements in a table, to accept a minimum of 10
+different fields which includes your name, address, phone, email address, your picture, your
+college; your branch, fields for your personal history (Minimum 3 fields), favourite theory
+and practical subjects (Checkbox), Username, Password(password).-->
+<!DOTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>Personal Profile 123Jobs</title>
+    </head>
+    <body>
+        <h1>User Registration</h1>
+        <form action = "submit_profile.php" method="post">
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type ="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><input type = "textarea" name="address"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input type="tel" name="phone"></td>
+            </tr>
+            <tr>
+                <td>E-mail</td>
+                <td><input type="email" name="email"></td>
+            </tr>
+            <tr>
+                <td>Picture</td>
+                <td><input type="file" name="image"></td>
+            </tr>
+            <tr>
+                <td>College</td>
+                <td><input type="text" name="college"></td>
+            </tr>
+            <tr>
+                <td>Branch</td>
+                <td><input type="text" name="branch"></td>
+            </tr>
+            <tr>
+                <td>Personal History</td>
+                <td><input type="textarea" name="p_history"></td>
+            </tr>
+            <tr>
+                <td>Favourite Theory</td>
+                <td>
+                    <input type="checkbox" name="fav_theory" value="Physics">Physics
+                    <input type="checkbox" name="fav_theory" value="Chemistry">Chemistry
+                    <input type="checkbox" name="fav_theory" value="Biology">Biology
+                </td>
+            </tr> 
+            <tr>
+                <td>Favourite Practical</td>
+                <td>
+                    <input type="checkbox" name="fav_prac" value="Physics Lab">Physics Lab
+                    <input type="checkbox" name="fav_prac" value="Chemistry Lab">Chemistry Lab
+                    <input type="checkbox" name-="fav_prac" value="Computer Lab">Computer Lab
+                </td>
+            </tr>   
+            <tr>
+                <td>User Name:</td>
+                <td><input type="text" name="user_name"></td>
+            </tr>
+            <tr>
+                <td> Password:</td>
+                <td><input type="password" name="pass"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+        </form>
+        <select name="country">
+            <option value="US">United States</option>
+            <option value="UK">United Kingdom</option>
+            <option value="India" selected>India</option>
+          </select>
+    </body>
+</html>
