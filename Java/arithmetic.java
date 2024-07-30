@@ -68,5 +68,6 @@ class arithmetic
             System.out.print("Enter valid input!!\n");
          }
         }
+        sc.close();
     }
 }
